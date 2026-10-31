@@ -390,3 +390,26 @@ footer {
         transition: none !important;
     }
 }
+/* Profile Photo */
+.profile-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    display: block;
+}
+
+/* Mobile Photo */
+@media (max-width: 450px) {
+    .profile-photo {
+        width: 125px;
+        height: 125px;
+    }
+}
