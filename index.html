@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Prajapati Tilak | Developer Portfolio</title>
+    <title>Tilak Prajapati | Developer Portfolio</title>
 
     <meta name="description"
-          content="Prajapati Tilak — B.E. IoT and Computer Science student learning web development and Python.">
+          content="Tilak Prajapati — B.E. IoT and Computer Science student learning web development and Python.">
+
+    <meta name="theme-color" content="#0d1117">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +21,12 @@
         <nav class="navbar">
             <a href="#home" class="logo">tilak<span>.</span></a>
 
-            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
                 ☰
             </button>
 
@@ -31,70 +38,73 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-<!-- Home -->
-<section class="hero" id="home">
 
-    <div class="hero-content">
+        <!-- Home / Hero -->
+        <section class="hero" id="home">
 
-        <p class="tagline">
-            STUDENT DEVELOPER · ALWAYS LEARNING
-        </p>
+            <div class="hero-content">
 
-        <h1>
-            Hi, I'm<br>
-            <span class="hero-name">Tilak Prajapati.</span>
-        </h1>
+                <p class="tagline">STUDENT DEVELOPER · ALWAYS LEARNING</p>
 
-        <h2>IoT & Computer Science Student</h2>
+                <h1>
+                    Hi, I'm<br>
+                    <span class="hero-name">Tilak Prajapati.</span>
+                </h1>
 
-        <p class="intro">
-            I'm learning web development and Python,
-            exploring new technologies, and turning
-            my ideas into projects. One step at a time.
-        </p>
+                <h2>IoT &amp; Computer Science Student</h2>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="btn primary-btn">
-                View My Projects ↗
-            </a>
+                <p class="intro">
+                    I'm learning web development and Python, exploring new
+                    technologies, and turning my ideas into projects.
+                    One step at a time.
+                </p>
 
-            <a href="#contact" class="btn secondary-btn">
-                Contact Me
-            </a>
-        </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        View My Projects ↗
+                    </a>
 
-        <p class="learning">
-            &lt;/&gt; &nbsp; Currently learning: JavaScript · Python · Git
-        </p>
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
 
-    </div>
+                <p class="learning">
+                    &lt;/&gt; &nbsp; Currently learning: JavaScript · Python · Git
+                </p>
 
-   <div class="hero-image">
-    <div class="photo-glow"></div>
+            </div>
 
-    <img
-        src="./picture/my-photo.jpg"
-        alt="Tilak Prajapati"
-        class="profile-photo"
-    >
-</div>
+            <!-- Profile Photo -->
+            <div class="hero-image">
+                <div class="photo-glow"></div>
 
-</section>
+                <img
+                    src="./picture/my-photo.jpg"
+                    alt="Portrait of Tilak Prajapati"
+                    class="profile-photo"
+                    width="400"
+                    height="500"
+                    fetchpriority="high"
+                >
+            </div>
+
+        </section>
 
         <!-- About -->
         <section class="section" id="about">
+
             <p class="section-label">ABOUT ME</p>
 
             <h2>A little about me.</h2>
 
             <div class="about-content">
                 <p>
-                    I'm Prajapati Tilak, a third-year B.E. student in
-                    IoT & Computer Science. I'm interested in programming,
+                    I'm Tilak Prajapati, a third-year B.E. student in
+                    IoT &amp; Computer Science. I'm interested in programming,
                     web development, and exploring how technology solves
                     real-world problems.
                 </p>
@@ -105,55 +115,61 @@
                     something new every day.
                 </p>
             </div>
+
         </section>
 
         <!-- Skills -->
         <section class="section" id="skills">
+
             <p class="section-label">MY SKILLS</p>
 
             <h2>Technologies I'm learning.</h2>
 
             <div class="skills-grid">
-                <div class="card">
+
+                <article class="card">
                     <span class="number">01</span>
                     <h3>HTML</h3>
                     <p>Creating webpage structures.</p>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <span class="number">02</span>
                     <h3>CSS</h3>
                     <p>Designing layouts and responsive pages.</p>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <span class="number">03</span>
                     <h3>JavaScript</h3>
                     <p>Learning programming logic and interactions.</p>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <span class="number">04</span>
                     <h3>Python</h3>
                     <p>Practising programming fundamentals.</p>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <span class="number">05</span>
-                    <h3>Git & GitHub</h3>
+                    <h3>Git &amp; GitHub</h3>
                     <p>Learning to manage and share code.</p>
-                </div>
+                </article>
 
-                <div class="card">
+                <article class="card">
                     <span class="number">06</span>
                     <h3>IoT</h3>
                     <p>Exploring connected devices and technology.</p>
-                </div>
+                </article>
+
             </div>
+
         </section>
 
         <!-- Projects -->
         <section class="section" id="projects">
+
             <p class="section-label">MY WORK</p>
 
             <h2>Projects I'm working on.</h2>
@@ -181,32 +197,35 @@
                         <span>JavaScript</span>
                     </div>
 
-                    <p class="project-status">Currently building</p>
+                    <p class="project-status">Learning &amp; improving</p>
                 </article>
 
                 <article class="project-card">
                     <p class="project-label">PROJECT 02</p>
 
-                    <h3>Coming Soon</h3>
+                    <h3>TaskMate — Student Task Planner</h3>
 
                     <p>
-                        I'm planning my next project to practise JavaScript
-                        and improve my problem-solving skills.
+                        A student task planner project designed to organise
+                        tasks, track progress, and practise frontend development.
                     </p>
 
                     <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
                         <span>JavaScript</span>
-                        <span>Learning</span>
                     </div>
 
-                    <p class="project-status">Planned</p>
+                    <p class="project-status">Student project</p>
                 </article>
 
             </div>
+
         </section>
 
         <!-- Contact -->
         <section class="section contact-section" id="contact">
+
             <p class="section-label">CONTACT</p>
 
             <h2>Let's connect.</h2>
@@ -217,7 +236,7 @@
             </p>
 
             <div class="contact-buttons">
-                <!-- Replace YOUR_GITHUB_USERNAME with your username -->
+
                 <a
                     href="https://github.com/tilakprajapati-2607"
                     class="btn primary-btn"
@@ -226,8 +245,9 @@
                     GitHub ↗
                 </a>
 
-                <!-- Replace YOUR_EMAIL with your email -->
-                <a href="mailto:tilakprajapati2607@gmail.com" class="btn se     dary-btn">
+                <a
+                    href="mailto:tilakprajapati2607@gmail.com"
+                    class="btn secondary-btn">
                     Email Me ↗
                 </a>
 
@@ -237,15 +257,19 @@
                     target="_blank"
                     rel="noopener noreferrer">
                     LinkedIn ↗
-                </a>    
+                </a>
+
             </div>
+
         </section>
 
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>© <span id="year"></span> Prajapati Tilak. Built while learning.</p>
+        <p>
+            © <span id="year"></span> Tilak Prajapati. Built while learning.
+        </p>
     </footer>
 
     <script src="script.js"></script>
