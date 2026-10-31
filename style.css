@@ -595,3 +595,49 @@ footer {
         width: 78%;
     }
 }
+
+/* Profile photo - right side */
+.hero-image {
+    width: 100%;
+    max-width: 390px;
+    justify-self: end;
+    position: relative;
+}
+
+.profile-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 48% 48% 20px 20px;
+    border: 2px solid var(--accent);
+    position: relative;
+    z-index: 1;
+}
+
+.photo-glow {
+    position: absolute;
+    width: 90%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: rgba(120, 220, 202, 0.13);
+    filter: blur(45px);
+    top: 15%;
+    left: 5%;
+    z-index: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 70%;
+        max-width: 250px;
+        justify-self: center;
+    }
+}
